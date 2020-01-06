@@ -1,4 +1,42 @@
-body {
-  background-color: red;
+.box1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: box1;
+}
+
+.box2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: box2;
+}
+
+.box3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: box3;
+}
+
+.box4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: box4;
+}
+
+.box5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: box5;
+}
+
+.main-contain {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "box1 box2" "box3 box3" "box4 box5";
+}
+
+.main-contain div {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
