@@ -9,21 +9,67 @@
 </head>
 <body>
     <section class="main-contain">
+        <div class="box0">
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+            <ul class="main-nav open">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
         <div class="box1">
             <h2>Box One</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae corrupti ipsum at optio molestias dolores, nemo cumque nam impedit doloremque, non libero, reprehenderit eligendi?</p>
         </div>
         <div class="box2">
             <h2>Box Two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis neque aperiam fugit laborum, numquam ut mollitia distinctio est repudiandae nam.</p>
         </div>
         <div class="box3">
             <h2>Box Three</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident aperiam ab, velit soluta id culpa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis necessitatibus nemo soluta incidunt tempore accusamus quibusdam alias tenetur dolores illo dolore sunt eligendi itaque quo voluptates non, possimus vitae deleniti placeat vero.</p>
         </div>
         <div class="box4">
             <h2>Box Four</h2>
+            <ul>
+                <li><a href="">Blanditiis</a></li>
+                <li><a href="">Lorem ipsum dolor</a></li>
+                <li><a href="">Tempore accusamus</a></li>
+            </ul>
         </div>
         <div class="box5">
             <h2>Box Five</h2>
+            <ul>
+                <li><a href="">Accusamus quibusdam</a></li>
+                <li><a href="">Amet consectetur</a></li>
+                <li><a href="">possimus vitae deleniti</a></li>
+                <li><a href="">Voluptates non</a></li>
+                <li><a href="">incidunt tempore</a></li>
+            </ul>
         </div>
     </section>
+    <script>
+        // select menu
+        var menuBtn = document.querySelector('.menu-btn');
+        var mainNav = document.querySelector('.main-nav');
+
+        // add onclick method
+        menuBtn.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            if(mainNav.classList.contains('open')) {
+                mainNav.classList.remove('open');
+            } else {
+                mainNav.classList.add('open');
+            }
+        }    
+        
+        // add open class
+        // remove open class
+    </script>
 </body>
 </html>

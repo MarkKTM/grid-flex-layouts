@@ -1,0 +1,130 @@
+
+.box0 { 
+    overflow: visible;
+    background-color: rgb(57, 111, 194);
+
+    .menu-btn {
+        width: 28px;
+        height: 20px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+
+        .menu-btn__burger {
+            position: absolute;
+            right: 0px;
+            top: 0.5rem;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0px;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background: #fff;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0px;
+                bottom: -8px;
+                width: 28px;
+                height: 3px;
+                background: #fff;
+            }
+        }
+    }
+
+    .main-nav {
+        width: 100vw;
+        position: absolute;
+        top: 70px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        list-style: none;
+        margin: 0;        
+        background-color: rgb(7, 83, 197);
+        display: none;
+
+        li {
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 15px 15px;
+            display: block;            
+        }
+
+        a:hover, a:focus, a:active {
+            background-color: rgb(20, 89, 192);
+        }
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+}
+.box1 { 
+    background-color: rgb(57, 111, 194);
+}
+.box2 {
+    background-color: rgb(57, 111, 194);
+}
+.box3 {
+    background-color: rgb(7, 83, 197);
+}
+.box4 {
+    background-color: rgb(57, 111, 194);
+}
+.box5 {
+    background-color: rgb(57, 111, 194);
+}
+
+.main-contain {    
+
+    div {
+        color: #fff;        
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+    }
+}
+
+@include media-md {
+    .box0 {       
+    
+        .menu-btn {
+            display: none;
+        }
+    
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            list-style: none;
+            margin: 0;
+            height: 70px;
+    
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+                text-decoration: none;
+                padding: 15px 15px;
+            }
+        }
+    }
+}
