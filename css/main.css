@@ -714,6 +714,7 @@ textarea,
     display: none;
   }
   .box0 .main-nav {
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -733,6 +734,11 @@ textarea,
     font-size: 1.5rem;
     text-decoration: none;
     padding: 15px 15px;
+  }
+  .box0 .main-nav.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
